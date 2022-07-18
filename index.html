@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title id="title">Oh the places you will go!</title>
+        <script type="text/javascript" src="index.js"></script>
+    </head>
+    <body>
+        <div class="maintitle">
+            <h1>Book a trip away today and escape the Melbourne winter!</h1>
+        <br>
+        <br>
+        <h2>We know that winter can be a chilly time - get away and soak up some sun with our amazing travel options!</h2>
+        </div>
+        
+
+    <br>
+    <div class="wholeform">
+        <form action="./main.js" method="post" id="form" onsubmit="validFormFieldInput()">
+    <div class="chooseflight" id="flighttype">
+        <h3>
+            Are you booking a one way or return flight?
+        </h3>
+        
+        <div>
+            <input type="radio" name="oneway" value="oneway">
+            <label>One way</label>
+            <br>
+            <input type="radio" name="oneway" value="return">
+            <label>Return</label>
+            <br>
+        </div>
+    <div class="whereto" id="destination">
+        <h2>
+            Where are you going?
+        </h2>
+        
+            <label for="destination">Destination airport:</label>
+            <br>
+            <input id="destination" name="destination" rows="2" cols="30" value="eg London">
+    </div>
+    <div class="whereto" id="leavingfrom">
+            
+            
+            <br>
+            <label for="departing">Departing airport:</label>
+            <br>
+            <input type="text" id="departing" name="departing" rows="2" cols="30" value="eg Bangkok">
+
+            
+            <br>
+            <br>
+    </div>
+    <div class="dates" id="leavedate">
+        <input type="date" name="departing" required>
+        <label for="departing">Departure Date:</label>
+        <br>
+    </div>
+    <div id="returndate">
+        <input type="date" name="returning" required>
+        <label for="returning">Return Date:</label>
+    </div>
+    <div class="passengers" id="travellers">
+        <h2>
+            Passenger Details
+        </h2>
+            <br>
+            <div class="passengerone" id="passone">
+                <p>Example Passenger</p>
+            <label for="passengerone">Passenger One:</label>
+            <br>
+          
+            <input id="passengerone" type="text" minlength="5" value="Mr H. Tml" required>
+            <br>
+            <p>Gender:</p>
+            <input type="radio" name="gender1" value="female">
+            <label>Female</label>
+            <br>
+            <input type="radio" name="gender1" value="male">
+            <label>Male</label>
+            <br>
+            <input type="radio" name="gender1" value="other">
+            <label>Other</label>
+            <br>
+            <input type="radio" name="gender1" value="prefernottosay">
+            <label>Prefer not to say</label>
+            <br>
+            <br>
+            <label for="age">Age of passenger:</label>
+            <input id="passengerone" name="age" type="number">
+            <br>
+            <br>
+        </div>
+        <div class="passengertwo" id="passtwo">
+            <label for="passengertwo">Passenger Two:</label>
+            <br>
+                <input id="passengertwo" type="text" minlength="5" value="Mrs C. Ss" required>
+                <p>Gender:</p>
+            <input type="radio" name="gender2" value="female">
+            <label>Female</label>
+            <br>
+            <input type="radio" name="gender2" value="male">
+            <label>Male</label>
+            <br>
+            <input type="radio" name="gender2" value="other">
+            <label>Other</label>
+            <br>
+            <input type="radio" name="gender2" value="prefernottosay">
+            <label>Prefer not to say</label>
+            <br>
+            <br>
+            <label for="age">Age of passenger:</label>
+            <input id="passengertwo" name="age" type="number">
+            <br>
+            <br>
+            
+            </div>
+            <br>
+            <div class="mobile" id="phone">
+                <label for="mobile">Mobile</label>
+                <input id="mobile" type="number" required>
+            </div>
+            <br>
+            <div class="email" id="emailaddress">
+                <label for="email">Email address</label>
+                <input id="email" required>
+            </div>
+            <br>
+            <br>
+            <div class="address" id="physicaladdress">
+                <label for="address" width="100px">Address</label>
+                <input id="address" value="12 Hi St, Exampletown">
+            </div>
+            <br>
+            <br>
+
+            <input type="Submit" value="Get me there!">
+
+            
+            
+            
+        </form>
+    </div>
+
+
+
+    </div>
+</form>
+</div>
+
+</script>
+    </body>
+    </html>
+</div>
